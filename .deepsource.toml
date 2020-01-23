@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = [
+  'tests/**',
+]
+
+exclude_patterns = [
+  'glibc.py',
+  'icu_sources.py',
+  'pep425tags.py',
+]
+
+[[ analyzers ]]
+  name = 'python'
+  enabled = true
+
+  [analyzers.meta]
+  runtime_version = '2.x.x'
